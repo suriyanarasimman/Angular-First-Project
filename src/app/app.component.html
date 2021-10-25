@@ -3,6 +3,10 @@
     <div class="col-xs-12">
       <h3>Inside AppComponet</h3>
       <hr>
+      <label>Server Name</label>
+      <input type = "text" [(ngModel)]="name">
+      <button [disabled]="name === '' " (click)=" onclic()">Add Server</button>
+      <p>{{status}}</p>
       <app-servers></app-servers>
 
     </div>

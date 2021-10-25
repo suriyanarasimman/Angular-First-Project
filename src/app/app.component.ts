@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-app';
-  name = "Suriya";
+  name = "";
+  status = "No server was Created";
+  Bstate:boolean = false;
+
+  onclic(){
+    this.status = "Server was created, Name is " + this.name;
+  }
 }
